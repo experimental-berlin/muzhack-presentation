@@ -1,50 +1,122 @@
 <!doctype html>
 <html>
-	<head>
-		<meta charset="utf-8">
-		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 
-		<title>reveal.js</title>
+    <title>MuzHack</title>
 
-		<link rel="stylesheet" href="css/reveal.css">
-		<link rel="stylesheet" href="css/theme/black.css">
+    <link rel="stylesheet" href="css/reveal.css">
+    <link rel="stylesheet" href="css/theme/black.css">
+    <link rel="stylesheet" href="css/theme/custom.css">
 
-		<!-- Theme used for syntax highlighting of code -->
-		<link rel="stylesheet" href="lib/css/zenburn.css">
+    <!-- Theme used for syntax highlighting of code -->
+    <link rel="stylesheet" href="lib/css/zenburn.css">
 
-		<!-- Printing and PDF exports -->
-		<script>
-			var link = document.createElement('link');
-			link.rel = 'stylesheet';
-			link.type = 'text/css';
-			link.href = window.location.search.match(/print-pdf/gi) ? 'css/print/pdf.css' : 'css/print/paper.css';
-			document.getElementsByTagName('head')[0].appendChild(link);
-		</script>
-	</head>
-	<body>
-		<div class="reveal">
-			<div class="slides">
-				<section data-markdown>#MuzHack</section>
-				<section data-markdown>##Slide 2</section>
-			</div>
-		</div>
+    <!-- Printing and PDF exports -->
+    <script>
+      var link = document.createElement('link');
+      link.rel = 'stylesheet';
+      link.type = 'text/css';
+      link.href = window.location.search.match(/print-pdf/gi) ? 'css/print/pdf.css' : 'css/print/paper.css';
+      document.getElementsByTagName('head')[0].appendChild(link);
+    </script>
+  </head>
+  <body>
+    <div class="reveal">
+      <div class="slides">
+        <section>
+          <img src="http://muzhack.github.io/muzhack/assets/images/muzhack.png" class="logo" />
+        </section>
+        <section>
+          <h2>A Catalog of Music Hardware Projects</h2>
+          <p><em>MuzHack is first and foremost a catalog of independent music hardware projects.
+          </em></p>
+          <img src="images/catalog.png" width="790" height="420" />
+        </section>
+        <section>
+          <h2>Sharing of Designs</h2>
+          <p><em>The second underlying idea of MuzHack is to facilitate the sharing of music hardware
+          designs.</em></p>
+          <p>Not only should people be able to find cool musical devices, they should also
+            be able to understand how to reproduce them if they want to (and the author is
+            prepared to share).</p>
+        </section>
+        <section>
+          <h2>MuzHack is Free and Open</h2>
+          <p>MuzHack is an <em>open</em> platform, in that anyone can join the platform (for free)
+            and post projects to their heart's content.</p>
+          <p>This is an important principle, as it should be a platform for the <em>community</em>
+            as a whole.</p>
+        </section>
+        <section>
+          <h2>MuzHack is Open Source</h2>
+          <p><em>MuzHack's source code is freely available.</em></p>
+          <p>As the goal is to have a collaborative, community-driven, environment around MuzHack,
+            the source code is released under a permissive license (MIT) on the popular
+            source code hosting service GitHub.</p>
+          <p>This should hopefully encourage useful contributions from volunteers. It also means
+            that maintenance of MuzHack can continue even if the original developer should leave.
+          </p>
+        </section>
+        <section>
+          <h2>Projects Include Build Instructions</h2>
+          <p>If the author so chooses, a MuzHack project provides user friendly instructions
+            for how to build the hardware yourself.</p>
+          <p>Having easy instructions for building devices yourself opens for some great
+          educational potential, as it empowers people to understand themselves how their
+          devices work and they might even be able to customize them.</p>
+        </section>
+        <section>
+          <h2>Projects Can be Imported from GitHub</h2>
+          <p>In addition to the standard workflow of creating projects directly on MuzHack,
+            through a visual interface, you have the option to import them from GitHub.</p>
+          <p>This workflow saves you from the work of having to maintain a duplicate version
+            of your project (i.e. on MuzHack), and allows you to e.g. generate your own
+            website from the same data. When you make changes to your GitHub repository,
+            MuzHack automatically synchronizes the corresponding project.</p>
+        </section>
+        <section>
+          <h2>Workshops</h2>
+          <p>Another idea underpinning the MuzHack project is to facilitate and organize
+            workshops.
+          </p>
+          <p>Building stuff together with other people is just more fun!
+          </p>
+        </section>
+        <section>
+          <h2>Future Directions</h2>
+          <ul>
+            <li>Youtube videos and sound snippets to demonstrate devices</li>
+            <li>User friendly BOMs with links to purchase components</li>
+            <li>Marketplace to buy components/kits/assembled products</li>
+            <li>Social network capabilities</li>
+            <li>Comments on projects</li>
+            <li>Project ratings</li>
+            <li>Ability to fork ("remix") projects</li>
+            <li>Announcements of project related workshops</li>
+            <li>Curated content</li>
+          </ul>
+        </section>
+      </div>
+    </div>
 
-		<script src="lib/js/head.min.js"></script>
-		<script src="js/reveal.js"></script>
+    <script src="lib/js/head.min.js"></script>
+    <script src="js/reveal.js"></script>
 
-		<script>
-			// More info https://github.com/hakimel/reveal.js#configuration
-			Reveal.initialize({
-				history: true,
+    <script>
+      // More info https://github.com/hakimel/reveal.js#configuration
+      Reveal.initialize({
+        history: true,
 
-				// More info https://github.com/hakimel/reveal.js#dependencies
-				dependencies: [
-					{src: 'plugin/markdown/marked.js'},
-					{src: 'plugin/markdown/markdown.js'},
-					{src: 'plugin/notes/notes.js', async: true},
-					{src: 'plugin/highlight/highlight.js', async: true, callback: function() {hljs.initHighlightingOnLoad();}}
-				]
-			});
-		</script>
-	</body>
+        // More info https://github.com/hakimel/reveal.js#dependencies
+        dependencies: [
+          {src: 'plugin/markdown/marked.js'},
+          {src: 'plugin/markdown/markdown.js'},
+          {src: 'plugin/notes/notes.js', async: true},
+          {src: 'plugin/highlight/highlight.js', async: true, callback: function() {hljs.initHighlightingOnLoad();}}
+        ]
+      });
+    </script>
+  </body>
 </html>
